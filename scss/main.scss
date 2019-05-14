@@ -1,0 +1,191 @@
+@import 'variables';
+
+// ------------ navbar ----------------
+.navbar-brand{
+    font-family: kaushan script;
+    color: $lite !important;
+    span{
+        color: $alt;
+    }
+    
+    font-size: 1.75rem;
+    &:hover{
+        color: $alt !important;
+        span{
+            color: $lite;
+        }
+    }
+}
+
+.navbar .nav-item .nav-link {
+    color: $lite !important;
+    &.active{
+        color: $alt !important;
+        text-shadow: 1px 1px black;
+        &:hover{
+            color: $lite !important;
+        }
+    }
+    &:hover{
+        color: $alt !important;
+        text-shadow: none;
+    }
+}
+
+// -------- box shadow ------
+.box {
+    box-shadow: 5px 5px 20px rgba($color: $dark, $alpha: 0.35);
+    background: $main;
+}
+.bgsemi {
+    background: rgba($color: black, $alpha: 0.35);
+}
+
+// ------------ main slides ----------
+#slide1{
+    background: url('../img/bg/why.jpg') no-repeat;
+    background-size: cover;
+    //max-width: 100vw;
+    height: 630px;
+    //min-height: 650px;
+}
+
+#maintabs > a {
+    border-right: 1px solid $wite;
+    &.active {
+        background: linear-gradient(to bottom right, rgb(156, 7, 185), rgb(201, 119, 137));
+        color: $wite !important;
+        border-right:none;     
+    }
+}
+
+.form-control, .form-check {
+    font-family: ubuntu condensed;
+    font-size: 1.25rem;
+}
+
+.input-group {
+    &.input-group-append {
+        & span {
+            width: 45px;
+        }
+    }
+}
+
+// ------------- services ----------------
+.fa-plane {
+    transform: rotate(-45deg);
+}
+
+// ------------ package ---------
+
+.card {
+    &.tours{
+        transform: none;
+        img {
+            height: 200px;
+            transform: scaleX(1.2);
+            transition: all 600ms ease;
+
+        }
+        &:hover
+        {
+            img {
+                transform: scaleX(1);
+                transition: all 600ms ease;
+            }
+        }
+        overflow:hidden;
+    }
+}
+
+// ------------ hotels ----------
+
+.price {
+    bottom: 95px;
+    right: 5px;
+    position: absolute;
+    z-index: 22;
+    background: beige;
+//    border: 1px solid black;
+    color: $main;
+    font-family: ubuntu;
+    font-size: 1.25rem;
+    &:hover {
+        background: orange;
+        color: white !important;
+    }
+}
+
+.card {
+    &.item{
+        transform: none;
+        img {
+            height: 300px;
+            transform: scaleX(1.1);
+            transition: all 600ms ease;
+
+        }
+        &:hover
+        {
+            img {
+                transform: scaleX(1);
+                transition: all 600ms ease;
+            }
+        }
+        overflow:hidden;
+    }
+}
+
+.owl-dots .owl-dot {
+    & span {
+        background: $alt !important;
+    }
+    &.active{
+        & span {
+            background: $main !important;
+            }
+    }
+    
+}
+
+// -------- testimonials --------
+.item img {
+    &.client{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+// --------- footer ---------
+#subscribe {
+    font-family: ubuntu condensed;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+    min-width: 250px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.social {
+    font-size: 1.5rem;
+    color:gold !important;
+    &:hover{
+        color: $alt !important;
+    }
+}
+
+.sign {
+    font-family: beyond the mountains;
+    font-size: 1rem;
+    color: gold !important;
+    &:hover{
+        color: $alt !important;
+    }
+}
+
+#topbtn {
+    bottom: 100px;
+    right: 20px;
+    display:none;
+    position: fixed;
+}

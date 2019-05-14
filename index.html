@@ -1,0 +1,892 @@
+<!-- Template to get started bootstrap & jquery -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Frontend Developer Portfolio">
+    <meta name="author" content="Akshay Rajput">
+    <title>Traverse</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/fonts/fa/all.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/fonts/flaticon/flaticon.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="js/owl/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="js/owl/assets/owl.theme.default.css">
+		<link href="css/fonts/devicon/devicon.min.css" rel="stylesheet">
+		
+		<!--
+		<link href="css/fonts/linericon/style.css" rel="stylesheet">
+    <link href="css/fonts/ionicons/css/ionicons.min.css" rel="stylesheet">
+		-->
+		<link href="css/aos.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body data-spy="scroll" data-target="#homenav" data-offset="30">
+	<nav class="navbar navbar-expand-md navbar-dark bgsemi fixed-top" id="homenav">
+		<div class="container">
+			<a class="navbar-brand" href="#"><span class="fa fa-paper-plane"></span>Traverse</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#homenav" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 active anchor-scroll" href="#home" data-class-to="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 anchor-scroll" href="#viewservices" data-class-to="#viewservices">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 anchor-scroll" href="#viewpackage" data-class-to="#viewpackage">Packages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 anchor-scroll" href="#viewhotel" data-class-to="#viewhotel">Hotels</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 anchor-scroll" href="#viewreviews" data-class-to="#viewreviews">Testimonials</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link mr-md-2 anchor-scroll" href="#viewcontact" data-class-to="#viewcontact">Contact</a>
+					</li>
+				</ul>
+				<button class="btn btnmain py-1 ml-md-4 my-2">Book now</button>
+			</div> <!-- collapse nav -->
+		</div> <!-- container -->
+	</nav>
+
+	<div class="container-fluid px-0" id="home" >
+		<div class=" pb-3 pt-5" id="slide1">
+			<div class="container py-md-5">
+				<div class="row">
+					<div class="col-md-6 py-3">
+						<h1 class="display-4 pt-5 text-white">Simply Amazing Tourist destinations</h1>
+						<p class="text-muted mb-4 d-none d-sm-block">
+							With our packages tailor-made for every kind of traveler we ensure that everyone has the experience of a lifetime.
+							We provide travel arrangements to some of the most amazing places on earth, that are little known globally.
+						</p>
+						<a href="" class="btn btn-lg btnmain">View Tour Packages</a>
+					</div> <!-- col-6 -->
+					<div class=" col-md-6 py-3">
+						<div class="nav nav-pills pl-md-5 ml-md-3" id="maintabs" role="tablist">
+							<a href="#flights" class="nav-link bgdark active" id="tabflight" data-toggle="pill">
+								<span class="fa fa-plane-departure mr-2"></span>
+								Flights
+							</a>
+							<a href="#hotels" class="nav-link bgdark" id="tabhotel" data-toggle="pill">
+								<span class="fa fa-hotel mr-2"></span>
+								Hotels
+							</a>
+							<a href="#trains" class="nav-link bgdark" id="tabtrain" data-toggle="pill">
+								<span class="fa fa-train mr-2"></span>
+								Trains
+							</a>
+							<a href="#cruises" class="nav-link bgdark" id="tabcruise" data-toggle="pill">
+								<span class="fa fa-ship mr-2"></span>
+								Cruises
+							</a>
+						</div> <!-- tabnavs -->
+						<div class="pl-md-5 ml-md-3 pr-md-2">
+							<div class="tab-content py-3 bgalt">
+	
+								<div class="tab-pane fade show active px-3" id="flights" role="tabpanel">
+									<form action="" method="post" class="form py-3">
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-plane-departure bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="From City">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-plane-arrival bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="To City">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-times bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Departure Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-day bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Arrival Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-users bgdark border-0 fgwite pt-2"></span>
+											<input type="number" min="1" max="10" name="" id="" class="form-control" placeholder="Travellers">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-dollar-sign bgdark border-0 fgwite pt-2"></span>
+											<select name="" id="" class="form-control">
+												<option value="">~~ Class ~~</option>
+												<option value="">Economy Class</option>
+												<option value="">Business Class</option>
+												<option value="">First Class</option>
+											</select>
+										</div>
+										<a href="" class="btn btnmain px-5">Check Flight</a>
+									</form>
+								</div>
+
+								<div class="tab-pane fade px-3" id="hotels" role="tabpanel">
+									<form action="" method="post" class="form py-3">
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-city bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="City">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-times bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Check-in Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-day bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Check-out Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-users bgdark border-0 fgwite pt-2"></span>
+											<input type="number" min="1" max="10" name="" id="" class="form-control" placeholder="Total Guests">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-dollar-sign bgdark border-0 fgwite pt-2"></span>
+											<select name="" id="" class="form-control">
+												<option value="">-- Rooms --</option>
+												<option value="">Economy</option>
+												<option value="">Premium</option>
+												<option value="">Deluxe</option>
+												<option value="">Platinum</option>
+												<option value="">Penthouse</option>
+											</select>
+										</div>
+										<a href="" class="btn btnmain px-5">Check Hotels</a>
+									</form>
+								</div>
+						
+								<div class="tab-pane fade px-3" id="trains" role="tabpanel">
+									<form action="" method="post" class="form py-3">
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-city bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="From City">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-city bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="To City">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-times bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Departure Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-users bgdark border-0 fgwite pt-2"></span>
+											<input type="number" min="1" max="10" name="" id="" class="form-control" placeholder="Total Passengers">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-dollar-sign bgdark border-0 fgwite pt-2"></span>
+											<select name="" id="" class="form-control">
+												<option value="">-- Categories --</option>
+												<option value="">Economy</option>
+												<option value="">Coach</option>
+												<option value="">Deluxe</option>
+												<option value="">Platinum</option>
+											</select>
+										</div>
+										<a href="" class="btn btnmain px-5">Check Trains</a>
+									</form>
+								</div>
+
+								<div class="tab-pane fade px-3" id="cruises" role="tabpanel">
+									<form action="" method="post" class="form py-3">
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-location-arrow bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control" placeholder="Location">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-calendar-times bgdark border-0 fgwite pt-2"></span>
+											<input type="text" name="" id="" class="form-control datepicker" placeholder="Check-in Date">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-users bgdark border-0 fgwite pt-2"></span>
+											<input type="number" min="1" max="10" name="" id="" class="form-control" placeholder="Total Guests">
+										</div>
+										<div class="input-group input-group-append mb-3">
+											<span class="input-group-text fa fa-dollar-sign bgdark border-0 fgwite pt-2"></span>
+											<select name="" id="" class="form-control">
+												<option value="">-- Categories --</option>
+												<option value="">Economy</option>
+												<option value="">Premium</option>
+												<option value="">Deluxe</option>
+												<option value="">Platinum</option>
+												<option value="">Penthouse</option>
+											</select>
+										</div>
+										<a href="" class="btn btnmain px-5">Check Cruise</a>
+									</form>
+								</div>
+								
+							</div> <!-- tab content-->
+						</div>
+					</div><!-- col6 booking form -->
+				</div> <!-- row -->
+			</div> 
+		</div> <!-- intro -->
+	</div> <!-- fluid intro -->
+
+	<div class="container-fluid py-5" id="viewservices">
+		<div class="container py-3 text-center">
+			<div class="d-flex align-items-center justify-content-center">
+				<span class="fa fa-snowflake fa-2x mr-3"></span>
+				<h1 class="display-4">
+					Our Services 
+				</h1>
+				<span class="fa fa-snowflake fa-2x ml-3"></span>
+			</div>
+			<p class="text-muted">Some of the services that we offer are shown below. We also provide extra assistance & support during travels to our customers.</p>
+			<div class="row">
+				<div class="col-sm-3 p-3">
+					<div class="card p-3 shadow">
+						<i class="flaticon-plane fa-4x"></i>
+						<h4 class="mb-3">Flight Booking</h4>
+						<p class="text-muted">
+							We provide great deals with our partner airlines.
+							We take care of everything from booking flights to your tourist visas.
+						</p>
+						<a href="" class="btn btnmain mx-auto">Book Flight</a>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3">
+					<div class="card p-3 shadow">
+						<i class="flaticon-resort fa-4x"></i>
+						<h4 class="mb-3">Hotel Booking</h4>
+						<p class="text-muted">
+							We provide great deals with our partner hotels.
+							We provide extra discounts & perks to our customers in our partner hotels.
+						</p>
+						<a href="" class="btn btnmain mx-auto">Book Hotel</a>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3">
+					<div class="card p-3 shadow">
+						<i class="flaticon-landmark fa-4x"></i>
+						<h4 class="mb-3">Tourist Packages</h4>
+						<p class="text-muted">
+							We provide tourist packages to exotic locations.
+							Our packages are specially designed to cater to your every need.
+						</p>
+						<a href="" class="btn btnmain mx-auto">Book Train</a>
+					</div>
+				</div>
+				<div class="col-sm-3 p-3">
+					<div class="card p-3 shadow">
+						<i class="flaticon-boat fa-4x"></i>
+						<h4 class="mb-3">Cruise Vacations</h4>
+						<p class="text-muted">
+							We specialise in booking cruise vacations.
+							Our cruises travel to exotic beaches & provide view of ocean never seen before.
+						</p>
+						<a href="" class="btn btnmain mx-auto">Book Cruise</a>
+					</div>
+				</div>
+			</div> <!-- row cards-->
+
+			<h2 class="pt-5">Our Features</h2>
+			<p class="text-muted small">Traverse provides following benefits to its customers.</p>
+			<div class="row px-3 card-deck m-auto">
+				<div class="col-2 card shadow py-3 bgdark">
+					<i class="fa fa-2x fa-dollar-sign mb-2 pt-2 text-warning"></i>
+					<p class="h6 text-white">Best Prices</p>
+				</div>
+				<div class="col-2 card shadow py-3 bgdark">
+					<i class="fa fa-2x fa-money-check-alt mb-2 pt-2 text-warning"></i>
+					<p class="h6 text-white">Book now, pay later</p>
+				</div>
+				<div class="col-2 card shadow py-3 bgdark">
+					<i class="fa fa-money-bill fa-2x pt-2 mb-2 text-warning"></i>
+					<p class="h6 text-white">Zero Cancellation fees</p>
+				</div>
+				<div class="col-2 card shadow py-3 bgdark">
+					<i class="fa fa-phone-square fa-2x pt-2 mb-2 text-warning"></i>
+					<p class="h6 text-white">24/7 Customer Support</p>
+				</div>
+				<div class="col-2 card shadow py-3 bgdark">
+					<i class="fa fa-gem fa-2x pt-2 mb-2 text-warning"></i>
+					<p class="h6 text-white">Special Discounts</p>
+				</div>
+			</div>
+
+		</div>
+	</div> <!-- services -->
+
+	<div class="container-fluid bgwite py-5" id="viewpackage">
+		<div class="container py-3 text-center">
+			<h1 class="display-4 mb-3">
+				<span class="flaticon-island mr-3"></span> 
+				Our Top Packages 
+				<span class="flaticon-island ml-3"></span>
+			</h1>
+			<p class="text-muted">
+				Take a look at our tourist packages, below are some of our best packages.
+					We also provide custom packages for customers who are looking for something different.
+					We provide tourist packages to top destinations at best prices available on web.
+			</p>
+			<div class="row pt-3">
+				<div class="col-md-4 p-3">
+					<div class="card shadow pt-3">
+						<h4 class="pb-2 border-bottom">Economical Packages</h4>
+						<ul class="px-3 pt-2">
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Maldives</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1200</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Sri-Lanka</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1350</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Bali</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1450</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Malaysia</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1600</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Thailand</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1750</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Singapore</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$1800</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- col4 pack1-->
+
+				<div class="col-md-4 p-3">
+					<div class="card shadow pt-3">
+						<h4 class="pb-2 border-bottom">Luxury Packages</h4>
+						<ul class="px-3 pt-2">
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Austrailia</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2200</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">New-Zealand</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2000</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Spain</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2450</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Dubai</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2100</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Japan</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2350</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Paris</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$2800</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- col4 pack2-->
+
+				<div class="col-md-4 p-3">
+					<div class="card shadow pt-3">
+						<h4 class="pb-2 border-bottom">Special Tours</h4>
+						<ul class="px-3 pt-2">
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">African Safari</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$3200</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Panda Reserve China</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$3350</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Pacific Cruise</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$3550</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Caribbean Cruise</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$3600</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Medieval Europe</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$4350</a>
+							</li>
+							<li class="d-flex align-items-center justify-content-between mb-2">
+								<span class="h6 font-weight-bold pt-2">Grand American Tour</span>
+								<a href="#" class="btn btn-dark text-white px-3 py-0">$5000</a>
+							</li>
+						</ul>
+					</div>
+				</div> <!-- col4 pack3-->
+
+			</div>	<!-- row -->
+			<h2 class="py-5">
+				<span class="flaticon-around mr-2"></span>
+				Popular Destinations
+				<span class="flaticon-around ml-2"></span>
+			</h2>
+			<div class="row">
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3  mb-md-0">
+					<img src="img/tours/blog-1.jpg" alt="" class="img-fluid rounded mb-2  mb-md-0">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">101 Reviews</span>
+					</p>
+					<h4 class=" px-3">Venice, Italy</h4>
+					<h5 class="px-3">$2700 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						6 Days / 5 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3 mb-md-0">
+					<img src="img/tours/blog-2.jpg" alt="" class="img-fluid rounded mb-2">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-dark"></span>
+						<span class="small text-muted ml-2">47 Reviews</span>
+					</p>
+					<h4 class=" px-3">Lake Odin, Norway</h4>
+					<h5 class="px-3">$2100 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						6 Days / 5 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3  mb-md-0">
+					<img src="img/tours/blog-5.jpg" alt="" class="img-fluid rounded mb-2">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="small text-muted ml-2">217 Reviews</span>
+					</p>
+					<h4 class=" px-3">Sydney, Austrailia</h4>
+					<h5 class="px-3">$3200 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						8 Days / 7 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3  mb-md-0">
+					<img src="img/tours/blog-4.jpg" alt="" class="img-fluid rounded mb-2">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-dark"></span>
+						<span class="small text-muted ml-2">52 Reviews</span>
+					</p>
+					<h4 class=" px-3">Sino, Mauritius</h4>
+					<h5 class="px-3">$3000 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						6 Days / 5 Nights
+					</p>
+				</div>
+				
+			</div> <!-- row 1 destinations-->
+
+			<div class="row">
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3">
+					<img src="img/dest/destination-6.jpg" alt="" class="img-fluid rounded mb-2 ">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">88 Reviews</span>
+					</p>
+					<h4 class=" px-3">Bali, Indonesia</h4>
+					<h5 class="px-3">$1850 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						5 Days / 5 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3">
+					<img src="img/popular_5.jpg" alt="" class="img-fluid rounded mb-2 ">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">127 Reviews</span>
+					</p>
+					<h4 class=" px-3">Male, Maldives</h4>
+					<h5 class="px-3">$1500 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						6 Days / 5 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3">
+					<img src="img/home.jpg" alt="" class="img-fluid rounded mb-2 ">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">27 Reviews</span>
+					</p>
+					<h4 class=" px-3">Cortiba, Spain</h4>
+					<h5 class="px-3">$2800 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						7 Days / 6 Nights
+					</p>
+				</div>
+				<div class="col-md-3 card tours px-0 rounded text-left mb-3">
+					<img src="img/bg/camel.jpg" alt="" class="img-fluid rounded mb-2">
+					<p class="px-3 mb-2">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="small text-muted ml-2">82 Reviews</span>
+					</p>
+					<h4 class=" px-3">Dubai</h4>
+					<h5 class="px-3">$2500 <span class="small text-muted"> / person</span></h5>
+					<p class="px-3">
+						7 Days / 8 Nights
+					</p>
+				</div>
+				
+			</div> <!-- row 2 destinations-->
+			<a href="#" class="btn btnmain mt-md-5 mt-3">View All Destinations</a>
+		</div> <!-- container packages -->
+	</div> <!-- fluid packages -->
+	
+	<div class="py-5 container-fluid text-center" id="viewhotel">
+		<div class="container py-3">
+			<h1 class="display-4 mb-3">
+				<span class="flaticon-cocktail mr-3"></span>
+				Top Hotels
+				<span class="flaticon-cocktail ml-3"></span>
+			</h1>
+			<p class="mb-3">
+				Below are the hotels all over the world that we recommend. 
+				We offer special discounts & facilities at these restaurants.
+			</p>
+			
+		</div> <!--container info -->
+		<div class="owl-carousel owl-theme px-5 hotels">
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-resto-1.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$200</a>
+					<h4 class="mb-1">Grand Arc Hotel</h4>
+					<p class="text-muted mb-1">Singapore</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="small text-muted ml-2">203 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-resto-5.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$250</a>
+					<h4 class="mb-1">Meadow Hotel</h4>
+					<p class="text-muted mb-1">Sydney</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">80 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-resto-4.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$325</a>
+					<h4 class="mb-1">Royals</h4>
+					<p class="text-muted mb-1">Barcelona</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="small text-muted ml-2">38 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-5.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$400</a>
+					<h4 class="mb-1">The Seasider</h4>
+					<p class="text-muted mb-1">Bahamas</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="small text-muted ml-2">138 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-6.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$275</a>
+					<h4 class="mb-1">Skyliner</h4>
+					<p class="text-muted mb-1">Singapore</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">70 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->
+			<div class="item card px-0 text-left shadow mb-3">
+				<img src="img/hotel/hotel-7.jpg" alt="" class="img-fluid mb-3">
+				<div class="text px-3">
+					<a href="" class="btn price">$350</a>
+					<h4 class="mb-1">Highside Hotel</h4>
+					<p class="text-muted mb-1">Monaco</p>
+					<p class="">
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star text-warning"></span>
+						<span class="fa fa-star-half-alt text-warning"></span>
+						<span class="small text-muted ml-2">93 Reviews</span>
+					</p>
+				</div>
+			</div> <!-- owl item -->					
+		</div> <!-- owl hotels-->
+		<a href="#" class="btn btnmain mt-4">View All Hotels</a>	
+	</div> <!-- fluid hotels-->
+
+	<div class="container-fluid bgwite py-5" id="viewreviews">
+		<div class="container py-3 text-center">
+			<h1 class="display-4 mb-3">Testimonials</h1>
+			<p class="text-muted mb-5">
+				Read what our clients have to say about us.
+				With over 1500+ tours managed so far, we are gaining more customers everyday.
+				Customer satisfaction is what drives us as you can surely see from the reviews that we have gotten.
+			</p>
+			<div class="owl-carousel owl-theme testimonials">
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/girl.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Amazing experience</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">Alfred Butler</span>
+				</div>
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/client-3.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Great for family vacations. Definitely recommended!</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">Wade Wilson</span>
+				</div>
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/person3.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Great destinations at cheap price!</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">Pepper Potts</span>
+				</div>
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/team-1.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Cruise vacations are worth it!</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">Rachel Wayne</span>
+				</div>
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/team-2.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Amazing choices available here!</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">Peter Parker</span>
+				</div>
+				<div class="item py-3 px-md-5 px-3">
+					<img src="img/clients/team-4.jpg" alt="" class="img-fluid rounded-circle client mx-auto mb-3">
+					<h3 class="">Great Winter holidays!</h3>
+					<p class=" mt-3 mb-3">
+						"Had an experience of a lifetime. My friend referred me this site and 
+						I have to say I'm greatly impressed by their work. 
+						They took care of travel & hotel arrangements as well as guided us through our tours.
+						I would definitely recommend their services."
+					</p>
+					<span class="blockquote-footer">John Snow</span>
+				</div>
+			</div>
+		</div>
+	</div> <!-- testimonials -->
+
+	<div class="container-fluid py-5" id="viewcontact">
+		<div class="container py-3">
+			<div class="row">
+				<div class="col-md-7">
+					<h2 class="mb-3">Contact Us</h2>
+					<form action="" method="" class="form py-3">
+						<div class="form-row mb-sm-3">
+							<div class="input-group input-group-append col-sm-5 mb-3 mb-sm-0">
+								<span class="fa fa-user pt-2 bgmain fgalt input-group-text"></span>
+								<input type="text" name="" id="" class="form-control border-primary" placeholder="Your Name">
+							</div>
+							<div class="input-group input-group-append col-sm-6 ml-auto mb-3 mb-sm-0">
+								<span class="fa fa-envelope pt-2 bgmain fgalt input-group-text"></span>
+								<input type="email" name="" id="" class="form-control border-primary" placeholder="Your Email">
+							</div>
+						</div>
+						<div class="form-row mb-sm-3">
+							<div class="input-group input-group-append col-sm-5 mb-3 mb-sm-0">
+								<span class="fa fa-phone pt-2 bgmain fgalt input-group-text"></span>
+								<input type="tel" name="" id="" class="form-control border-primary" placeholder="Phone / Mobile">
+							</div>
+							<div class="input-group input-group-append col-sm-6 ml-auto mb-3 mb-sm-0">
+								<span class="fa fa-question pt-2 bgmain fgalt input-group-text"></span>
+								<select name="" id="" class="form-control border-primary">
+									<option value="">~~ Subject ~~</option>
+									<option value="">Bookings</option>
+									<option value="">Packages</option>
+									<option value="">Custom Packages</option>
+									<option value="">Cancellations</option>
+								</select>
+							</div>
+						</div>
+						<div class="input-group input-group-append mb-3">
+							<span class="fa fa-pen bgmain fgalt input-group-text"></span>
+							<textarea name="" id="" cols="30" rows="5" placeholder="Enter message here." class="form-control border-primary"></textarea>
+						</div>
+						<button type="submit" class="btn btnmain px-3">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-4 offset-md-1">
+					<h2 class="mb-3">About Us</h2>
+					<p class="text-justify text-muted border-bottom pb-3">
+						Traverse is a online tourism portal which provides flight booking, hotel booking as well as cruise booking.
+						Traverse has been in business for last 10 years with 1500+ tours successfully managed till date. 
+					</p>
+					<div class="input-group input-group-append mb-3">
+						<span class="input-group-text bgdark fgalt fa fa-at" data-toggle="tooltip" data-placement="left" title="Mail Us"></span>
+						<a href="#" class=" mx-3">
+							info@traverse.com
+						</a>
+					</div>
+					<div class="input-group input-group-append mb-3">
+						<span class="input-group-text bgdark fgalt fa fa-phone" data-toggle="tooltip" data-placement="left" title="Call Us"></span>
+						<a href="#" class=" mx-3">
+							+1 222-400-3333
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> <!-- contact fluid -->
+
+	<div class="container-fluid pt-5 pb-3 text-center bgmain text-white">
+		<div class="container">
+			<h3 class="">Our Newsletter</h3>
+			<p class="text-white-50">Subscribe to our newsletter to know about our exclusive offers and deals.</p>
+			<div class="offset-md-4 col-md-4 mb-4">
+				<form action="" class="form-inline">
+					<div class="form-group">
+						<input type="email" name="" id="subscribe" class="" placeholder="Your Email">
+						<button type="submit" class="btn btn-warning">Subscribe</button>
+					</div>
+				</form>
+			</div>
+			<ul class="list-inline mb-3">
+				<li class="list-inline-item mx-3">
+					<a href="" class="">Careers</a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="" class="">Refund Policy</a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="" class="">Privacy Policy</a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="" class="">Terms</a>
+				</li>
+			</ul>
+			<ul class="list-inline mb-4">
+				<li class="list-inline-item mx-3">
+					<a href="pinterest.com" class="fab fa-pinterest social" target="_blank" data-toggle="tooltip" data-placement="left" title="Pinterest"></a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="snapchat.com" class="fab fa-snapchat-ghost social" target="_blank" data-toggle="tooltip" data-placement="top" title="Snapchat"></a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="fb.com" class="fab fa-facebook social" target="_blank" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+				</li>
+				<li class="list-inline-item mx-3">
+					<a href="instagram.com" class="fab fa-instagram social" target="_blank" data-toggle="tooltip" data-placement="right" title="Instagram"></a>
+				</li>
+			</ul>
+			<div class="">
+				<p class="text-white-50 mb-1">
+					<span class="fa fa-code"></span> by 
+					<a href="" class="sign ml-2" data-toggle="tooltip" data-placement="left" title="Visit Developer's Site">Akshay</a>.  
+					<span class="small">&copy;2019 All rights reserved. Images by </span>
+					<a href="unsplash.com" class="small border-bottom border-info">Unsplash</a>.
+				</p>
+				
+			</div>
+		</div>			
+	</div>
+
+	<div class="d-none d-sm-inline">
+		<a href="#top" id="topbtn"><span class="fa fa-2x fa-chevron-circle-up" data-toggle="tooltip" data-placement="left" title="Back To Top"></span></a>
+	</div>
+		
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery.anchorScroll.min.js"></script>
+	  <script src="js/owl/owl.carousel.min.js"></script>
+	  <script src="js/jquery-ui.js"></script>
+	  <script src="js/app.js"></script>
+	  
+   </body>  <!-- scrollspy container -->
+</html>

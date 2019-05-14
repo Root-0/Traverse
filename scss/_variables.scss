@@ -1,0 +1,109 @@
+$main : indigo; //#039be5;
+$lite : aqua;
+$dark : #123;
+$wite : snow;
+$alt : mediumorchid;
+.bgblu {
+    background: linear-gradient(45deg, $main, rgb(77, 186, 230));
+}
+
+// ------------- background ------------
+.bgmain {
+    background: $main;
+}
+
+.bglite {
+    background: $alt;
+}
+
+.bgdark {
+    background: $dark;
+}
+
+.bgwite {
+    background:floralwhite;
+}
+
+.bgalt {
+    background: rgba($color: $main, $alpha: 0.25);
+}
+// ---------------- foreground -------------
+.fgmain {
+    color: $main;
+}
+
+.fglite {
+    color: $lite;
+}
+
+.fgdark {
+    color: $dark;
+}
+
+.fgwite {
+    color: $wite;
+}
+
+.fgalt{
+    color: $alt;
+}
+// ------------ defaults -------------
+
+body {
+    font-family: ubuntu;
+}
+
+.h6{
+    font-size: 1.1rem;
+}
+
+/*.card {
+    min-width: 350px;
+    margin: 0 auto;
+}
+*/
+a {
+    font-family: ubuntu condensed;
+    font-size: 1.25rem;
+    color: $alt !important;
+    text-decoration: none;
+    &.btn.btnmain {
+        color: $wite !important;
+    }
+    &:hover{
+        text-decoration:line-through;
+        color: gold !important;
+    }
+}
+
+.btnmain {
+    background: linear-gradient(to top right,indigo, darkorchid);
+    color: $wite;
+    font-family: ubuntu condensed;
+    font-size: 1.25rem;
+    &:hover {
+        color: $lite;
+        background: linear-gradient(to bottom right, rgb(156, 7, 185), rgb(201, 119, 137));
+    }
+}
+.btn {
+    font-family: ubuntu condensed;
+    font-size: 1.2rem;
+}
+
+a {
+    &.btn-dark, .btn-outline-dark{
+    font-size: 1.25rem;
+    }
+}
+
+.card {
+    &:hover {
+        border: 2px solid $main !important;
+        color: $alt;
+        transform: scale(1.05);
+        transition: all 400ms ease;
+    }
+}
+
+

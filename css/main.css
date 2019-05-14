@@ -1,0 +1,287 @@
+.bgblu {
+  background: linear-gradient(45deg, indigo, #4dbae6);
+}
+
+.bgmain {
+  background: indigo;
+}
+
+.bglite {
+  background: mediumorchid;
+}
+
+.bgdark {
+  background: #123;
+}
+
+.bgwite {
+  background: floralwhite;
+}
+
+.bgalt {
+  background: rgba(75, 0, 130, 0.25);
+}
+
+.fgmain {
+  color: indigo;
+}
+
+.fglite {
+  color: aqua;
+}
+
+.fgdark {
+  color: #123;
+}
+
+.fgwite {
+  color: snow;
+}
+
+.fgalt {
+  color: mediumorchid;
+}
+
+body {
+  font-family: ubuntu;
+}
+
+.h6 {
+  font-size: 1.1rem;
+}
+
+/*.card {
+    min-width: 350px;
+    margin: 0 auto;
+}
+*/
+a {
+  font-family: ubuntu condensed;
+  font-size: 1.25rem;
+  color: mediumorchid !important;
+  text-decoration: none;
+}
+
+a.btn.btnmain {
+  color: snow !important;
+}
+
+a:hover {
+  text-decoration: line-through;
+  color: gold !important;
+}
+
+.btnmain {
+  background: -webkit-gradient(linear, left bottom, right top, from(indigo), to(darkorchid));
+  background: linear-gradient(to top right, indigo, darkorchid);
+  color: snow;
+  font-family: ubuntu condensed;
+  font-size: 1.25rem;
+}
+
+.btnmain:hover {
+  color: aqua;
+  background: -webkit-gradient(linear, left top, right bottom, from(#9c07b9), to(#c97789));
+  background: linear-gradient(to bottom right, #9c07b9, #c97789);
+}
+
+.btn {
+  font-family: ubuntu condensed;
+  font-size: 1.2rem;
+}
+
+a.btn-dark, a .btn-outline-dark {
+  font-size: 1.25rem;
+}
+
+.card:hover {
+  border: 2px solid indigo !important;
+  color: mediumorchid;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+
+.navbar-brand {
+  font-family: kaushan script;
+  color: aqua !important;
+  font-size: 1.75rem;
+}
+
+.navbar-brand span {
+  color: mediumorchid;
+}
+
+.navbar-brand:hover {
+  color: mediumorchid !important;
+}
+
+.navbar-brand:hover span {
+  color: aqua;
+}
+
+.navbar .nav-item .nav-link {
+  color: aqua !important;
+}
+
+.navbar .nav-item .nav-link.active {
+  color: mediumorchid !important;
+  text-shadow: 1px 1px black;
+}
+
+.navbar .nav-item .nav-link.active:hover {
+  color: aqua !important;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: mediumorchid !important;
+  text-shadow: none;
+}
+
+.box {
+  -webkit-box-shadow: 5px 5px 20px rgba(17, 34, 51, 0.35);
+          box-shadow: 5px 5px 20px rgba(17, 34, 51, 0.35);
+  background: indigo;
+}
+
+.bgsemi {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+#slide1 {
+  background: url("../img/bg/why.jpg") no-repeat;
+  background-size: cover;
+  height: 630px;
+}
+
+#maintabs > a {
+  border-right: 1px solid snow;
+}
+
+#maintabs > a.active {
+  background: -webkit-gradient(linear, left top, right bottom, from(#9c07b9), to(#c97789));
+  background: linear-gradient(to bottom right, #9c07b9, #c97789);
+  color: snow !important;
+  border-right: none;
+}
+
+.form-control, .form-check {
+  font-family: ubuntu condensed;
+  font-size: 1.25rem;
+}
+
+.input-group.input-group-append span {
+  width: 45px;
+}
+
+.fa-plane {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.card.tours {
+  -webkit-transform: none;
+          transform: none;
+  overflow: hidden;
+}
+
+.card.tours img {
+  height: 200px;
+  -webkit-transform: scaleX(1.2);
+          transform: scaleX(1.2);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.card.tours:hover img {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.price {
+  bottom: 95px;
+  right: 5px;
+  position: absolute;
+  z-index: 22;
+  background: beige;
+  color: indigo;
+  font-family: ubuntu;
+  font-size: 1.25rem;
+}
+
+.price:hover {
+  background: orange;
+  color: white !important;
+}
+
+.card.item {
+  -webkit-transform: none;
+          transform: none;
+  overflow: hidden;
+}
+
+.card.item img {
+  height: 300px;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.card.item:hover img {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.owl-dots .owl-dot span {
+  background: mediumorchid !important;
+}
+
+.owl-dots .owl-dot.active span {
+  background: indigo !important;
+}
+
+.item img.client {
+  width: 100px;
+  height: 100px;
+}
+
+#subscribe {
+  font-family: ubuntu condensed;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  min-width: 250px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.social {
+  font-size: 1.5rem;
+  color: gold !important;
+}
+
+.social:hover {
+  color: mediumorchid !important;
+}
+
+.sign {
+  font-family: beyond the mountains;
+  font-size: 1rem;
+  color: gold !important;
+}
+
+.sign:hover {
+  color: mediumorchid !important;
+}
+
+#topbtn {
+  bottom: 100px;
+  right: 20px;
+  display: none;
+  position: fixed;
+}
+/*# sourceMappingURL=main.css.map */
